@@ -24,8 +24,10 @@ const webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    filename: utils.assetsPath('js/[name].[id].js'),
+    chunkFilename: utils.assetsPath('js/[name].[id].js')
+    // filename: utils.assetsPath('js/[name].[chunkhash].js'),
+    // chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
@@ -64,6 +66,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: config.build.index,
       template: 'index.html',
       inject: true,
+      dir: config.build.assetsPublicPath,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
