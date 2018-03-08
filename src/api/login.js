@@ -3,11 +3,12 @@
  * @Date: 2018-03-06 22:21:56
  * @Desc: login API
  * @Last Modified by: xunzou
- * @Last Modified time: 2018-03-08 21:56:12
+ * @Last Modified time: 2018-03-09 07:13:05
  */
 import axios from '@/utils/axios'
 /**
  * 用户认证所用到的 API
+ * @class AuthService
  */
 class AuthService {
   /**
