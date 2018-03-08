@@ -3,7 +3,7 @@
  * @Date: 2018-03-06 22:21:56
  * @Desc: login API
  * @Last Modified by: xunzou
- * @Last Modified time: 2018-03-09 07:13:05
+ * @Last Modified time: 2018-03-09 07:22:32
  */
 import axios from '@/utils/axios'
 /**
@@ -45,7 +45,6 @@ class AuthService {
       url: '/auth/logout'
     })
   }
-
 }
 
 // 实例化后导出，全局单例
